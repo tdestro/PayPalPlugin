@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         {% block stylesheets %}
+        {% include '@SyliusUi/_stylesheets.html.twig' with {'path': 'assets/shop/css/style.css'} %}
+        {% include '@SyliusUi/_stylesheets.html.twig' with {'path': 'assets/shop/css/custom.css'} %}
             <style>
                 .container {
                     padding: 30px;
@@ -176,6 +178,7 @@
                 }
             </style>
         {% endblock %}
+        {% include '@Destro/_favicons.html.twig' %}
     </head>
     <body>
     <div id="paypal-payment-container" class="ui segment loadable">
