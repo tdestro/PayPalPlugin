@@ -51,12 +51,6 @@ sylius_ui:
             blocks:
                 pay_pal_logo:
                     template: '@SyliusPayPalPlugin/payPalLogo.html.twig'
-        sylius.admin.payment_method.index.javascripts:
-            blocks:
-                pay_pal_payment_method:
-                    template: '@SyliusPayPalPlugin/javascripts.html.twig'
-                    priority: -100
-
 monolog:
     channels: ['paypal']
     handlers:
