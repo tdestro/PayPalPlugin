@@ -26,6 +26,7 @@
 
                 .padding {
                     padding: 10px;
+                    margin: auto;
                 }
 
                 .back-button-container {
@@ -194,12 +195,12 @@
                 <div class="item" data-tab="paypal">PayPal</div>
                 <div class="active item" data-tab="card">{{ 'sylius.pay_pal.credit_card'|trans }}</div>
             </div>
-            <div class="ui bottom attached active tab segment" data-tab="paypal">
+            <div class="ui bottom attached tab segment" data-tab="paypal">
                 <div class="button-container padding">
                     <div id="paypal-button-container"></div>
                 </div>
             </div>
-            <div class="ui bottom attached tab segment" data-tab="card">
+            <div class="ui bottom attached active tab segment" data-tab="card">
                 <div class="button-container padding">
                     <div id="advanced-cards-container"></div>
                     <form id="advanced-cards-form">
