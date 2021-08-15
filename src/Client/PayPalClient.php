@@ -84,7 +84,6 @@ final class PayPalClient implements PayPalClientInterface
 
         if ($response->getStatusCode() !== 200) {
             $contents = $response->getBody()->getContents();
-            $body = $response->getBody();
             throw new PayPalAuthorizationException();
         }
 
